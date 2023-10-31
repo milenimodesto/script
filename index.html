@@ -1,12 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Livraria Online</title>
 </head>
 <body>
+    <h1>Livraria Online </h1>
+    <p>Clique no botão par calcular um desconto. </p>
+    <button onclick="CalcularDesconto()">CalcularDesconto</button>
+
     <script>
+        functon CalcularDesconto() {
+            const ValorCompra=parseFloat(prompt("digite o valor total da sua compra:"));
+            let desconto = 0;
+            if (ValorCompra > 200){
+                desconto= 0.2 //20% DE DESCONTO
+            } else if(ValorCompra > 100){
+                desconto = 0.1; //10% de desconto
+            }
+            const ValorDesconto = ValorCompra * desconto;
+            alert (`Você economizou R$ ${ValorDesconto.toFixed(2)}no seu pedido!);
+        }
 
 let a = 10;
 let b = 20;
