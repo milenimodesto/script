@@ -9,7 +9,7 @@
     <button onclick="CalcularDesconto()">CalcularDesconto</button>
 
     <script>
-        functon CalcularDesconto() {
+        function CalcularDesconto() {
             const ValorCompra=parseFloat(prompt("digite o valor total da sua compra:"));
             let desconto = 0;
             if (ValorCompra > 200){
@@ -18,17 +18,9 @@
                 desconto = 0.1; //10% de desconto
             }
             const ValorDesconto = ValorCompra * desconto;
-            alert (`Você economizou R$ ${ValorDesconto.toFixed(2)}no seu pedido!);
+            alert (`Você economizou R$ ${ValorDesconto.toFixed(2)}no seu pedido!`);
         }
 
-let a = 10;
-let b = 20;
-if (a < 5 && b >10 ) {
-    console.log("ambas as condições são verdadeiras");
-} else {
- console.log("pelo menos uma das condições é falsa ou as duas estão falsas.");
- 
-}
 
     </script>
 
